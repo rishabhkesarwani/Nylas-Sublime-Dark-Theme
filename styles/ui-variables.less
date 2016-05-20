@@ -1,0 +1,121 @@
+@arc-sublime-grey:      #2D2D2D;
+@arc-border:            #272C35;
+@arc-hover:             #7A7D81;
+@arc-select:            #2F65CA;
+@arc-select-unfocused:  #4774CA;
+@white:                 #FFFFFF;
+
+///PANEL
+@panel-background-color:         @arc-sublime-grey;
+@source-list-bg:                 @panel-background-color;
+@source-list-active-bg:          @panel-background-color;
+@source-list-active-color:       @arc-select;
+
+/// MENU
+@menu-divider-color: @arc-sublime-grey;
+@menu-item-color-hover: @arc-sublime-grey;
+@menu-item-color-selected: @arc-select;
+@menu-text-color-selected: @white;
+
+///BACKGROUND FONT MESSAGES
+@background-primary:     @arc-sublime-grey;
+@background-off-primary: @arc-sublime-grey;
+
+///BACKGROUND MESSAGES AND TOOLBAR
+@background-secondary:   @arc-sublime-grey;
+@background-tertiary:    @arc-sublime-grey;
+
+///BORDERS
+@list-border:            @arc-border;
+@border-color-primary:   @arc-border;
+@border-color-secondary: @arc-border;
+@border-color-tertiary:  @arc-border;
+@border-color-divider:   @arc-border;
+
+///TEXT COLORS
+@text-color:         @white;
+@text-color-inverse: @white;
+@text-color-alert:  #E64D65;
+@text-color-heading: @white;
+@text-color-link:        @arc-select;
+@text-color-link-hover:  @arc-select-unfocused;
+@text-color-link-active: @arc-select-unfocused;
+
+///SELECTION
+@accent-primary:         #3D94E3;
+@accent-primary-dark:    @arc-select;
+@accent-secondary:       #4A7AB4;
+
+///HILIGHT
+@list-bg:                @arc-hover;
+
+///TOOLBAR, SEARCH, BUTTONS
+@toolbar-background-color: @arc-sublime-grey;
+.sheet-toolbar {
+  border-bottom: 1px solid @list-border !important;
+  .sheet-toolbar-container {
+    background: @arc-sublime-grey;
+  }
+  .btn-toolbar {
+    background: @arc-sublime-grey;
+    border: 1px solid @list-border !important;
+    box-shadow: none;
+     &:hover {
+      background: @arc-hover;
+      }
+     &:active {
+      background: @arc-select;
+     }  
+}
+  .search-bar .menu .header-container input {
+    background: @arc-sublime-grey;
+    border: 1px solid @list-border !important;
+    box-shadow: none;
+ }
+}
+
+///UNFOCUSED
+body.is-blurred {
+  .sheet-toolbar-container {
+    background: @arc-sublime-grey;
+    .btn.btn-toolbar {
+      background: @arc-sublime-grey;
+      box-shadow: none;
+    }
+  }
+  .search-bar .menu .header-container input {
+    background: @arc-sublime-grey;
+    box-shadow: none;
+  }
+  .list-container .list-item.focused {
+    background: @arc-select-unfocused;
+    color:      @white;
+  }
+}
+
+///NORMAL
+body {
+  .list-container .list-item.focused {
+    background: @arc-select;
+    color:      @white;
+  }
+}
+
+///SCROLLBAR
+.scrollbar-track {
+  background: @arc-sublime-grey;
+  border: 1px solid @list-border !important;
+  .scrollbar-handle {
+    width: 8px;
+    border: none;
+    background: #737985;
+     &:hover {
+       background: #737985;
+       border: none;
+    }
+     &:active {
+      background: @arc-select;
+      border: none;
+     }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "sublime-dark",
+  "displayName": "Sublime Dark",
+  "theme": "ui",
+  "version": "0.0.1",
+  "description": "The Sublime Dark N1 Client Theme",
+  "license": "GPL-3.0",
+  "engines": {
+    "nylas": "*"
+  },
+  "styleSheets": ["email-frame"],
+  "private": true
+}
